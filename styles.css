@@ -1,0 +1,234 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0px;
+    background-color:#f5deb3;
+    font-size: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+  }
+  
+  .left-side {
+    display: flex;
+  }
+  
+  .nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+  
+  .active-nav-link {
+    border-bottom: 1px solid black;
+  }
+  
+  .active-nav-link a {
+    color: black !important;
+  }
+  
+  .nav-link-wrapper a {
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  
+  .nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-link-wrapper a:hover {
+    color: black;
+  }
+  
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .portfolio-item-wrapper {
+    position: relative;
+  }
+  
+  .portfolio-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+  }
+  
+  .img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+  }
+  
+  .image-blur {
+    transition: 1s;
+    filter: brightness(10%);
+  }
+  
+  .img-text-wrapper:hover .subtitle {
+    color: white;
+    font-weight: 600;
+  }
+  
+  .two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile-image-wrapper img {
+    height: 90%;
+    width: 100%;
+  }
+  
+  .profile-content-wrapper {
+    padding: 30px;
+  }
+  
+  .profile-content-wrapper h1 {
+    color: black;
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* About page*/
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 50%; 
+  border: 3px solid rgb(105, 4, 4);  
+  margin-left: 150px;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: rgb(105, 4, 4);
+}
+
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 200px;
+}
+
+/* Taller footer on small screens
+@media (max-width: 567em) {
+    body {
+      margin-bottom: 700px;
+    }
+    .footer {
+      height: 700px;
+    }
+} */
+
+/*footer style
+-------------------------------------------------- */
+footer {
+  padding-top: 10px;
+  background-color: #292c2f;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  text-align:center
+}
+
+footer a {
+  color: white;
+  text-decoration:none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+/* my angle page */
+.house-image-wrapper img {
+  width: 60%; 
+  border: 3px solid rgb(105, 4, 4);  
+  margin-left: 130px;
+  margin-top: 50px;
+}
+
+.portfolio-content-wrapper h1, h3 {
+  color: rgb(105, 4, 4);
+}
+
+/* Contact page */
+.contact-page {
+      margin: 0;
+    padding: 0;
+    background-color:blanchedalmond;
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    overflow: hidden;
+  font-family:'Times New Roman', Times, serifpace;
+}

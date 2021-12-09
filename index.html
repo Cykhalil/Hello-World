@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="nav-wrapper">
+        <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+        
+        <div class="nav-link-wrapper">
+          <a href="myangle.html">Portfolio</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+            <a href="Contact.html">Contact</a>
+        </div>
+
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SANAA KHALIL
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url('images/Wabi-Sabi.jpeg')"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">Wabi-Sabi Japanese Design</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url('images/Dining.jpeg')"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Earth-Tone Dining Room</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Wabi-Sabi\ Bedroom.jpeg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Wabi-Sabi Bedroom</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Winter-Livingroom.jpeg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Warm and Cozy Living Room</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Living-Room.JPG)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Modern and Contemporary Living Room</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Japanese-Bedroom.jpg)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">Japanese Minimalist Bedroom</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Japanese-Dining.jpg)"></div>
+          <div class="img-text-wrapper">
+           
+            <div class="subtitle">Minimalist Japanese Dining Room</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Japanese-Zen.jpg)"></div>
+          <div class="img-text-wrapper">
+           
+            <div class="subtitle">Japanese Zen Design</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Home-Office.jpg)"></div>
+          <div class="img-text-wrapper">
+           
+
+            <div class="subtitle">Layout Idea for an office-Friendly Environment in Your Living Area </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Earth-Tone\ Bathroom.jpg)"></div>
+          <div class="img-text-wrapper">
+          
+
+            <div class="subtitle">Earth-Tone Bathroom</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Bedroom.JPG)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">Bedroom</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Livingroom.jpg)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Modern Japanese Living Room</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+            <ul class="list-unstyled">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+</html>
